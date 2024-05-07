@@ -45,10 +45,7 @@ posts = [
 ]
 
 # Ключ - id поста, значение - сам пост в списке posts
-ids_and_posts_dict = dict()
-
-for post in posts:
-    ids_and_posts_dict[post['id']] = post
+ids_and_posts_dict = {post['id']: post for post in posts}
 
 
 def index(request):
